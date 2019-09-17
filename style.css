@@ -127,6 +127,22 @@ nav {
   display: none;
 }
 
+/* Vote */
+
+.voteprecedant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.imgvote{
+    width: 75%;
+    height: auto;
+
+}
+
+/* Footer */
 footer{
     background-color: #6b2727;
     padding: 5%;
@@ -151,7 +167,7 @@ li{
     padding: 15px;
 }
 
-img{
+.icon{
     width: 35px;
     height: auto;
     filter: invert(1);
