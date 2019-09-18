@@ -219,23 +219,19 @@ p {
   margin: 0 0.4em;
 
 }
-
-.voteprecedant{
-    display: flex;
-    flex-direction: column;
+.divDifferente{
+  width: 100%;
 }
 
-
-.imgvote{
-    width: 75%;
-    height: auto;
-
+.voteBouton{
+  margin-left: 40%;
+  
 }
-
 
 .voteBouton a{
   text-decoration: none;
   color : black;
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 .mapArticle{
@@ -248,11 +244,8 @@ p {
   background-color: #D9D9D9;
 }
 
-.pVote{
-  font-family: 'Libre Franklin', sans-serif;
-  text-align: justify;
-  margin : 4% 0;
-}
+
+
 .botMarg{
   margin-bottom: 3%;
 }
@@ -260,6 +253,12 @@ p {
 .lesJeux{
   align-self: flex-start;
   margin-left : 22%;
+  margin-top : 3%;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.Blasphemous{
+  margin-top : 8%;
 }
 
 
