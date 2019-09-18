@@ -3,19 +3,19 @@
     margin : 0;
     padding : 0;
 }
- 
+
 nav{
     display : none;
 }
 
-div#slider { 
-    width: 100%; 
+div#slider {
+    width: 100%;
     max-width: 1280px;
     overflow: hidden
 }
 
 div#slider figure {
-    position: relative; 
+    position: relative;
     width: 400%;
     margin: 0;
     padding: 0;
@@ -24,10 +24,10 @@ div#slider figure {
     animation: 18s slidy infinite;
   }
 
-  div#slider figure img { 
-      width: 25%; 
+  div#slider figure img {
+      width: 25%;
       height: auto;
-      float: left; 
+      float: left;
     }
 
     @keyframes slidy {
@@ -139,7 +139,8 @@ form.search-bar input[type=text] {
 /* Style the submit button */
 form.search-bar button {
   margin-right: 0;
-  width: 25%;
+  min-width: 35%;
+  max-width:36%;
   height: auto;
   padding: 10px;
   color: white;
@@ -197,26 +198,39 @@ h2{
   border-top: 3px solid #E8E8E8;
   border-bottom: 3px solid #E8E8E8;
   border-collapse: collapse;
+}
 
-
+.top3 div{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  margin-right: 0.2em;
 }
 
 .top3 img{
-  min-width: 20%;
+  max-width: 100%;
   height: auto;
   margin-top: 0.4em;
-
 }
 
 h3 {
   font-family: 'Abel', sans-serif;
   margin-top: 0.4em;
+  padding-left: 0.4em;
   border-bottom: 2px solid #6B2727;
+}
+
+h3 a {
+  text-decoration: none;
+  color: black;
+  display: block;
 }
 
 main p {
   font-family: 'Libre Franklin', sans-serif;
   text-align: justify;
+  padding: 0 0.4em;
+  margin: 0 0.4em;
 
 }
 
@@ -292,4 +306,3 @@ footer img{
 .icones{
     display: flex;
 }
-
