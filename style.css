@@ -186,8 +186,10 @@ nav {
 h2{
   font-family: 'Abel', sans-serif;
   display: flex;
+  justify-content: center;
   background-color: #7C94A0;
   border-bottom: 3px solid #E8E8E8;
+  width : 100%;
 }
 
 .top3 {
@@ -238,6 +240,34 @@ main p {
   background-color: #7C94A0;
 }
 
+.voteBouton a{
+  text-decoration: none;
+  color : black;
+}
+
+.mapArticle{
+  display : flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  border : solid  #6b2727 1px;
+  margin : 4%;
+  background-color: #F3efef;
+}
+
+.pVote{
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: justify;
+  margin : 4% 0;
+}
+.botMarg{
+  margin-bottom: 3%;
+}
+
+.lesJeux{
+  align-self: flex-start;
+  margin-left : 22%;
+}
 
 footer{
     background-color: #6b2727;
