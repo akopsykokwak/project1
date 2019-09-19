@@ -38,31 +38,34 @@
         <button type="submit"><i class="fa fa-search"></i></button>
     </form>
 
-<!-- nav pour la version desktop-->
-
-       <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Top</a></li>
-                <li><a href="#">Vote</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
 
     </header>
 
       <main>
+        <nav>
+          <div class="containNav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Top</a></li>
+              <li><a href="#">Vote</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">A propos</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
         <h2>Test du 29/02/1968</h2>
 
           <article class="mapArticle">
 
-            <div>
-              <h3> The Binding of Isaac</h3>
+
+            <h3 class="review"> The Binding of Isaac</h3>
+            <div class="mapReview">
+              <div class = "img-review-container">
               <img src="https://drive.google.com/uc?id=1oLisJrRAKbMXLHFNlc-acPU3gjpf6Avw" alt="Isaac, le héros du jeu est en pleurs, entouré de monstres">
-            </div>
-            <div>
+              </div>
+              <div class= "list-review-container">
               <ul class="list-review">
                 <li><b>Genre :</b> Roguelike avec du caca</li>
                 <li><b>Developpeur :</b> Edmund Mc Millen & Florian Himsl</li>
@@ -70,6 +73,7 @@
                 <li><b>Date de sortie :</b> 4 novembre 2014 (Rebirth), 3 janvier 2017 (Afterbirth +)</li>
               </ul>
             </div>
+          </div>
             <div>
               <p>Après que sa mère tente de le tuer, Isaac se réfugie dans le sous sol de sa maison. Ainsi débute l'aventure cathartique d'Isaac (et de ses alter-ego).<br/> </p>
             </div>
@@ -79,6 +83,8 @@
           <article class="mapArticle">
 
               <h3 class="review">Avis des indé:(moddeurs)</h3>
+
+            <div class="flex-container">
 
 
               <div class="flex-container-row">
@@ -100,7 +106,7 @@
 
                 <p><b>*inclut une communication de pseudo connaisseur*</b><br/>"Ce jeu est manifestement un virulent pamphlet contre la société de consomation. La manière dont Edmund Mac Milen à sû manier les codes du premier stade et de les melanger avec un systeme d'éternel recommencement démontre son talent d'écriture. Ce jeu est une parabole géante de notre vie. Naissance, rapport à la mère et inévitable mort ... Du GENIE !"</p>
               </div>
-            </div>
+
 
               <div class="flex-container-row">
                 <div class="flex-vignette-review">
@@ -113,11 +119,13 @@
                 <p class="review"><b>*inclut une communication de fan boy*</b><br/>"Isaac prend de plus en plus de profondeur à mesure que l'on y joue. Passée la phase de découverte des ennemis, ainsi que des pick-up, le jeu se déguste sans faim pour découvrir les interactions entre items et accomplir ses quelques 500 challenges. Comme dans tout rogue-like, on peut avoir tendance à rager de temps en temps (bless RNGesus), mais même après 300-400 heures, j'ai toujours du plaisir à faire une petite run (pis j'ai pas fini tous les challenges...)!"</p>
               </div>
             </div>
+          </div>
+          </div>
           </article>
 
         <article class="mapArticle">
         <h3 class="review">Too Long, didn't read (LULz)</h3>
-          <ul class="list-review">
+          <ul class="list-review summary">
             <li>Coin-Coin : "Votez Quimby !"</li>
             <li>MrGlup : "Certes, oui, un grand jeu pour connaisseurs"</li>
             <li>DeeepDeep : "T_T Hell YeSsSssSSsss T_T"</li>

@@ -450,12 +450,17 @@ h3 a {
   height : auto;
 }
 
-.flex-container-row{
+.flex-container{
   display:flex;
-  flex-direction:row;
+  flex-direction:column;
   margin-top: 0.8em;
   margin-bottom: 0.8em;
   align-items: center;
+}
+
+.flex-container-row{
+  display:flex;
+  flex-direction: row;
 }
 
 .flex-vignette-review{
@@ -780,7 +785,7 @@ footer img{
 
   #Celeste:hover p{
     display : block;
-   
+
 }
 
   #Risk:hover{
@@ -813,18 +818,63 @@ footer img{
     padding : 0;
 }
 
+
+  .mapReview{
+    display:flex;
+    flex-direction: row;
+  }
+
+  .mapReview img{
+    max-width: 100%;
+  }
+
+  .img-review-container{
+    width: calc(60% - 0.4em);
+    margin: 0.8em;
+  }
+
+  .list-review-container{
+      width: calc(40% - 0.4em);
+      display:flex;
+      align-items: center;
+      margin: 0.8em;
+  }
+  .list-review{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0.4em;
+  }
+ .flex-container{
+   display:flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width:100%;
+   align-items: flex-start;
+ }
+
+ .flex-container-row{
+   width: calc(30% - 1em);
+   flex-direction:column;
+ }
+ .summary{
+   flex-direction:column;
+   font-weight: bold;
+ }
+
 /* Début des sections en MQ : */
 .sectiongénérale{
   display: flex;
   justify-content: center;
-  
+
 }
 
 
 .h2change{
   width : 96%;
   margin-left : 2%;
-  
+
 }
 
 .top3{
@@ -848,7 +898,7 @@ footer img{
   margin-top: 0.5em;
   width : 100%;
   margin-left: 0;
- 
+
 }
 
 
@@ -899,6 +949,7 @@ footer img{
 
 .contact input, textarea{
   width: 91%;
+
 }
 
 
@@ -986,5 +1037,3 @@ footer{
         width: 100%;
     }
 }
-
-
