@@ -729,4 +729,32 @@ footer img{
     border-radius : 15px;
 }
 
+/* Page Contact */
+
+/* A propos */
+
+.generalAbout {
+  display: flex;
+  align-items: baseline;
+  margin: 0 2%;
+}
+
+.mapAbout{
+  padding: 15px;
+}
+
+.aboutTexte{
+  flex-direction: column;
+}
+
+.aboutTexte p {
+  padding: 15px;
+}
+
+/* Contact */
+
+.contact{
+  margin: 0%;
+}
+
 }
