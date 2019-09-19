@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Abel|Libre+Franklin&display=swap" rel="stylesheet">
-    <title>indé:(moddable)</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Libre+Franklin&display=swap" rel="stylesheet">
+  <title>indé:(moddable)</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
-  <body>
-     <header class="header">
+<body>
+  <header class="header">
     <!-- menu burger pour la version mobile -->
     <div class="dropdown">
-     <button class="dropbtn">&#x2630;</button>
-       <div class="dropdown-content">
-         <a href="#">Sample reviews</a>
-         <a href="#">Top 3</a>
-         <a href="#">Upcoming reviews</a>
-         <a href="#">Vote for next review</a>
-         <a href="#">About & Contact</a>
+      <button class="dropbtn">&#x2630;</button>
+      <div class="dropdown-content">
+        <a href="#">Sample reviews</a>
+        <a href="#">Top 3</a>
+        <a href="#">Upcoming reviews</a>
+        <a href="#">Vote for next review</a>
+        <a href="#">About & Contact</a>
       </div>
     </div>
 
-<!-- To do : ajouter logo -->
+    <!-- To do : ajouter logo -->
 
     <h1><a class="home-button" href="index.html">indé:(moddable)</a></h1>
 
-<!-- Search bar -->
+    <!-- Search bar -->
 
     <form class="search-bar" action="action_page.php">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
     </form>
-      </header>
+  </header>
 
 
 
 
-<!-- Début main content -->
+  <!-- Début main content -->
   <main>
 
-<!-- nav pour la version desktop-->
+    <!-- nav pour la version desktop-->
 
     <nav>
       <div class="containNav">
@@ -59,9 +60,9 @@
         </ul>
       </div>
     </nav>
-<!-- carousel -->
-    <h2>Derniers tests</h2>
-    <div id="slider" >
+    <!-- carousel -->
+    <h2 id="lastTest">Derniers tests</h2>
+    <div id="slider">
       <figure>
         <img src="https://drive.google.com/uc?id=1gcAzicVGmYVKWPKVHBzQpFkk_2g58FGT" alt="Celeste">
         <img src="https://drive.google.com/uc?id=1DSSyxuIhB3GMUv146KkTIJRlcgSel-YP" alt="Risk of rain">
@@ -70,145 +71,172 @@
       </figure>
     </div>
 
-<!-- section last review desktop-->
+    <!-- section last review desktop-->
 
-    <article class = "testDesktop">
-      
-      <div class = "divImageDesktop" id="Celeste">
+    <article class="testDesktop">
+
+      <div class="divImageDesktop" id="Celeste">
         <img src="https://drive.google.com/uc?id=1gcAzicVGmYVKWPKVHBzQpFkk_2g58FGT" alt="Celeste">
         <p>Celeste c'est trop bien !</p>
-        
+
       </div>
-      <div class = "divImageDesktop" id="Risk">
+      <div class="divImageDesktop" id="Risk">
         <img src="https://drive.google.com/uc?id=1DSSyxuIhB3GMUv146KkTIJRlcgSel-YP" alt="Risk of rain">
-        
+        <p>Risk of Rain 2 c'est trop bien !</p>
       </div>
-      <div class = "divImageDesktop" id="Yooka">
+      <div class="divImageDesktop" id="Yooka">
         <img src="https://drive.google.com/uc?id=1ar_u-Kme9p-PtyA8RT_A-31xWYE5mCYU" alt="Yooka-Laylee">
-        
+        <p>Yooka-Laylee c'est trop bien !</p>
       </div>
-    </article>    
+    </article>
 
     <!-- Section top3 -->
+    <section class="sectiongénérale">
+      <section class="top3">
+        <h2>Top 3</h2>
+        <article class="mapArticle">
 
-<section>
-  <h2 class = "top3" >Top 3</h2>
-  <article class="mapArticle">
+          <div>
+            <h3><a href="binding-of-isaac.html">The Binding of Isaac</a></h3>
+            <div class="mapImages">
+              <div>
+                <img src="https://drive.google.com/uc?id=1oLisJrRAKbMXLHFNlc-acPU3gjpf6Avw"
+                  alt="Isaac, le héros du jeu est en pleur, entouré de monstres">
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+                dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula
+                massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est
+                eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae,
+                consequat in, pretium a, enim. Pellentesque congue. </p>
+            </div>
+          </div>
+        </article>
+        <article class="mapArticle">
+          <div>
+            <h3><a href="">Undertale</a></h3>
+            <div class="mapImages">
+              <div>
+                <img src="https://drive.google.com/uc?id=1M4UAOkAPnnnMjqphYy49VbjfTYZiCvXF"
+                  alt="Undertale est écrit en pixel sur fond noir, un chien blanc à côté">
+              </div>
+              <p>Undertale est un jeu vidéo développé par Toby Fox seulement. Sorti en 2015 d'abord sur Windows et OS X,
+                il a été édité sur plusieurs consoles les années d'après grâce à son succès.
+                Vous prenez le contrôle d'un enfant tombé dans l'Underground, une région peuplé de monstres,
+                qui doit trouver son chemin pour retourner à la surface.
+                Demander de l'aide aux monstres ou tout détruire sur votre passage ne dépend que de vous.</p>
+            </div>
+          </div>
+        </article>
+        <article class="mapArticle">
 
-    <div>
-      <h3><a href="binding-of-isaac.html">The Binding of Isaac</a></h3>
-      <div>
-        <img src="https://drive.google.com/uc?id=1oLisJrRAKbMXLHFNlc-acPU3gjpf6Avw" alt="Isaac, le héros du jeu est en pleur, entouré de monstres">
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. </p>
-    </div>
-  </article>
-  <article class="mapArticle">
-    <div>
-      <h3><a href="">Undertale</a></h3>
-      <div>
-        <img src="https://drive.google.com/uc?id=1M4UAOkAPnnnMjqphYy49VbjfTYZiCvXF" alt="Undertale est écrit en pixel sur fond noir, un chien blanc à côté">
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.</p>
-    </div>
-  </article>
-  <article class="mapArticle">
+          <div>
+            <h3><a href="">Don't starve together</a></h3>
+            <div class="mapImages">
+              <div>
+                <img src="https://drive.google.com/uc?id=1MWmEXM5jzSfHVQvEKvnTkpgzOuIfFCXQ"
+                  alt="Des personnages du jeu semblent se défendre contre leur environnement">
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+                dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula
+                massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est
+                eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae,
+                consequat in, pretium a, enim. Pellentesque congue.
+            </div>
+          </div>
+        </article>
+        </article>
+      </section>
 
-      <div>
-      <h3><a href="">Don't starve together</a></h3>
-      <div>
-        <img src="https://drive.google.com/uc?id=1MWmEXM5jzSfHVQvEKvnTkpgzOuIfFCXQ" alt="Des personnages du jeu semblent se défendre contre leur environnement">
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.
-    </div>
-  </article>
-</section>
+      <!-- Section vote de la semaine dernière-->
+      <section class="section2">
+        <h2>Vote de la semaine dernière</h2>
+        <article class="mapArticle">
+          <div>
+            <h3>Le gagnant est Dicey Dungeons !</h3>
+            <div class="divDicey">
+              <div id="imgDicey">
+                <img id="Dicey" src="https://drive.google.com/uc?id=13S5pCL0LAhz-T_QxMmpxkgKjj-bECYxR" alt="" />
+              </div>
+              <p><b>Titre :</b> Dicey Dungeons</p>
+              <p><b>Genre :</b> Stratégie</p>
+              <p><b>Développeur :</b> Terry Cavanagh</p>
+              <p><b>Editeur :</b> Terry Cavanagh</p>
+              <p><b>Date de sortie :</b> 13/08/2019</p>
+            </div>
+          </div>
+        </article>
 
-<!-- Section vote de la semaine dernière-->
-  <h2>Vote de la semaine dernière</h2>
-    <article class="mapArticle">
-      <div>
-        <h3>Le gagnant est Dicey Dungeons !</h3>
-      <div>
-        <img  src="https://drive.google.com/uc?id=13S5pCL0LAhz-T_QxMmpxkgKjj-bECYxR" alt=""/>
-      </div>
-        <p><b>Titre :</b> Dicey Dungeons</p>
-        <p><b>Genre :</b> Stratégie</p>
-        <p><b>Développeur :</b> Terry Cavanagh</p>
-        <p><b>Editeur :</b> Terry Cavanagh</p>
-        <p><b>Date de sortie :</b> 13/08/2019</p>
-      </div>
-  </article>
+        <!-- Vote de la semaine :-->
 
-<!-- Vote de la semaine :-->
+        <h2>Vote à venir</h2>
 
-<h2>Vote à venir</h2>
-
-<article class="mapArticle">
-  <div class ="divDifferente">
-    <h3 >Que souhaitez vous nous voir tester ?</h3>
+        <article class="mapArticle">
+          <div class="divDifferente">
+            <h3>Que souhaitez vous nous voir tester ?</h3>
 
 
-  <div class = "lesJeux Blasphemous">
-    <input type="radio" id="Blasphemous" name="jeu" value="Blasphemous">
-    <label for="Blasphemous">Blasphemous</label>
-  </div>
-  <div class ="lesJeux">
-    <input type="radio" id="Kerbal Space Program" name="jeu" value="Kerbal Space Program">
-    <label for="Kerbal Space Program">Kerbal Space Program</label>
-  </div>
+            <div class="lesJeux Blasphemous">
+              <input type="radio" id="Blasphemous" name="jeu" value="Blasphemous">
+              <label for="Blasphemous">Blasphemous</label>
+            </div>
+            <div class="lesJeux">
+              <input type="radio" id="Kerbal Space Program" name="jeu" value="Kerbal Space Program">
+              <label for="Kerbal Space Program">Kerbal Space Program</label>
+            </div>
 
-   <div class ="botMarg lesJeux">
-     <input type="radio" id="Gris" name="jeu" value="Gris">
-     <label for="Gris">Gris</label>
-   </div>
-    <button class="voteBouton botMarg"><a href="http://www.strawpoll.me/18657752">Vote !</a></button>
+            <div class="botMarg lesJeux">
+              <input type="radio" id="Gris" name="jeu" value="Gris">
+              <label for="Gris">Gris</label>
+            </div>
+            <button class="voteBouton botMarg"><a href="http://www.strawpoll.me/18657752">Vote !</a></button>
 
-  </div>
+          </div>
 
-</article>
-
+        </article>
+      </section>
+    </section>
   </main>
 
 
-    <div class="filler"></div>
-    <footer>
-        <div class="liensblog">
-            <ul>
-                <li>Dernières reviews</li>
-                <li>FAQ</li>
-                <li>A propos</li>
-            </ul>
-        </div>
-        <div class="reseau">
-            <ul class="icones">
-                <li>
-                    <a href="" title="facebook">
-                        <img class="icon" src="https://drive.google.com/uc?id=1DRkIjVY92te_Icf2hHx4itFWFCN1mjXI" alt="Facebook"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="" title="twitter">
-                        <img class="icon" src="https://drive.google.com/uc?id=1yUJ3cp9n0XqWNgheu3JPKkqVlQga780m" alt="Twitter"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/user/kumonijiako" title="youtube" target="_blank">
-                        <img class="icon" src="https://drive.google.com/uc?id=1YrYoP_6-qecSZD1IMzVVbmY1VgSeasbK" alt="Youtube"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.twitch.tv/mrrrrrggllup" title="twitch" target="_blank">
-                        <img class="icon" src="https://drive.google.com/uc?id=1JmMTQK6APITgWls6bqWtx1aFa4MfEduL" alt="Twitch"/>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="copyright">
-            	© indé:(moddable), 2019.
-        </div>
-      </footer>
+  <div class="filler"></div>
+  <footer>
+    <div class="liensblog">
+      <ul>
+        <li>Dernières reviews</li>
+        <li>FAQ</li>
+        <li>A propos</li>
+      </ul>
+    </div>
+    <div class="reseau">
+      <ul class="icones">
+        <li>
+          <a href="" title="facebook">
+            <img class="icon" src="https://drive.google.com/uc?id=1DRkIjVY92te_Icf2hHx4itFWFCN1mjXI" alt="Facebook" />
+          </a>
+        </li>
+        <li>
+          <a href="" title="twitter">
+            <img class="icon" src="https://drive.google.com/uc?id=1yUJ3cp9n0XqWNgheu3JPKkqVlQga780m" alt="Twitter" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/user/kumonijiako" title="youtube" target="_blank">
+            <img class="icon" src="https://drive.google.com/uc?id=1YrYoP_6-qecSZD1IMzVVbmY1VgSeasbK" alt="Youtube" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitch.tv/mrrrrrggllup" title="twitch" target="_blank">
+            <img class="icon" src="https://drive.google.com/uc?id=1JmMTQK6APITgWls6bqWtx1aFa4MfEduL" alt="Twitch" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      © indé:(moddable), 2019.
+    </div>
+  </footer>
 
 
 </body>
+
 </html>
