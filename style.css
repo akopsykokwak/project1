@@ -51,7 +51,7 @@ div#slider figure {
       }
 
       /* fin du carousel*/
-      
+
 .header {
   background-color: #355160;
   border-bottom: 3px solid #6B2727;
@@ -429,9 +429,48 @@ h3 a {
   display: block;
 }
 
+.review{
+  width:calc(100% - 0.8em);
+  margin-right: 0.4em;
+  margin-left: 0.4em;
+}
+
+.list-review{
+  list-style-type: none;
+  font-family: 'Libre Franklin', sans-serif;
+  margin: 0.8em auto;
+}
+
+.vignette{
+  width:100%
+  height: auto;
+}
+
+.flex-container-row{
+  display:flex;
+  flex-direction:row;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  align-items: center;
+}
+
+.flex-vignette-review{
+  display:flex;
+  flex-direction:column;
+  min-width: 20%;
+  align-items:center;
+  justify-content: center;
+
+}
+
+p .review{
+  width: 65%;
+  }
+
 h4{
   font-family:'Abel', sans-serif;
   font-variant:small-caps;
+  margin-bottom: 0.8em;
 
 }
 
@@ -448,7 +487,7 @@ p {
 
 .voteBouton{
   margin-left: 40%;
-  
+
 }
 
 .voteBouton a{
@@ -650,7 +689,7 @@ footer img{
   nav{
     display : block;
     background-color: #7C94A0;
-    
+
   }
   nav ul{
     list-style-type: none;
@@ -692,7 +731,7 @@ footer img{
   .divImageDesktop{
     width : 33%;
     height : auto;
-    
+
   }
 
 
@@ -702,13 +741,13 @@ footer img{
  }
 
  #Celeste:hover{
-   
+
    width : 100%;
    height : auto;
    display : block;
    margin:0;
    padding : 0;
-   
+
  }
 
  .testDesktop p{
