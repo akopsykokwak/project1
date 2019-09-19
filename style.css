@@ -12,6 +12,10 @@ nav{
     display : none;
 }
 
+.testDesktop{
+  display : none;
+}
+
 /* Le carousel*/
 
 div#slider {
@@ -175,6 +179,7 @@ nav {
 }
 
 /* Background main */
+
 
 
 
@@ -372,8 +377,6 @@ nav {
     margin-top: 18px;
 }
 
-/*main content*/
-
 h2{
   font-family: 'Abel', sans-serif;
   display: flex;
@@ -527,6 +530,45 @@ p {
   background-color: #7C94A0;
 }
 
+/* About */
+
+.mapAbout{
+  display: flex;
+  flex-direction: column;
+  margin: 0 2%;
+  padding : 4%;
+  background-color: #D9D9D9;
+}
+
+.mapAbout img{
+  max-width: 50%;
+  height: auto;
+  margin-top: 0.4em;
+}
+
+.aboutTexte{
+  display: flex;
+  align-items: center;
+  padding-top: 0.6em;
+  margin-top: 0.6em;
+}
+
+.aboutTexte p{
+  align-self: center;
+}
+
+
+/* Contact */
+
+
+.contact input, textarea{
+  width: 88%;
+  font-family: 'Libre Franklin';
+  padding: 10px;
+  margin: 10px;
+}
+
+
 footer{
     background-color: #6b2727;
     border-top: 10px solid #355160;
@@ -625,4 +667,105 @@ footer img{
     .write-new{
         width: 100%;
     }
+}
+
+/* Début du mediaQueries */
+
+@media only screen and (min-width : 961px){
+
+  .top3{
+    margin-top : 0;
+  }
+  /* Navbar et disparition burger*/
+
+  .dropbtn{
+    display : none;
+  }
+  .containNav{
+    width : 50%;
+    margin : 0 25%;
+  }
+
+  nav{
+    display : block;
+    background-color: #7C94A0;
+
+  }
+  nav ul{
+    list-style-type: none;
+    text-decoration: none;
+    display : flex;
+    justify-content: space-around;
+    padding : 2% 0;
+  }
+
+  nav ul li a:hover{
+    color : #6b2727;
+    font-weight: bolder;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    color : black;
+    font-family: 'Libre Franklin', sans-serif;
+  }
+
+  /* disparition carousel et appartition img */
+
+  #slider{
+    display : none ;
+  }
+
+  .testDesktop{
+
+    height : 480px;
+    display : flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    overflow: hidden;
+
+  }
+
+  .divImageDesktop{
+    width : 33%;
+    height : auto;
+
+  }
+
+
+ .testDesktop img{
+   width : 100%;
+   height : auto;
+ }
+
+ #Celeste:hover{
+
+   width : 100%;
+   height : auto;
+   display : block;
+   margin:0;
+   padding : 0;
+
+ }
+
+ .testDesktop p{
+
+  display : none;
+  position : relative;
+  top : -20%;
+  left : 70%;
+  background-color: #D9D9D9;
+  font-size: 2em;
+ }
+
+  #Celeste:hover p{
+    display : block;
+    width : 25%;
+    border :  black solid 2px;
+    text-align : center;
+    border-radius : 15px;
+}
+
 }
