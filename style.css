@@ -377,6 +377,10 @@ nav {
     margin-top: 18px;
 }
 
+
+/* fin de sect commment*/
+
+
 h2{
   font-family: 'Abel', sans-serif;
   display: flex;
@@ -442,8 +446,8 @@ h3 a {
 }
 
 .vignette{
-  width:100%
-  height: auto;
+  width:100%;
+  height : auto;
 }
 
 .flex-container-row{
@@ -758,14 +762,174 @@ footer img{
   left : 70%;
   background-color: #D9D9D9;
   font-size: 2em;
+  width : 25%;
+  border :  black solid 2px;
+  text-align : center;
+  border-radius : 15px;
  }
 
   #Celeste:hover p{
     display : block;
-    width : 25%;
-    border :  black solid 2px;
-    text-align : center;
-    border-radius : 15px;
+   
 }
 
+  #Risk:hover{
+    width : 100%;
+    height : auto;
+    display : block;
+    margin:0;
+    padding : 0;
 }
+
+  #Risk:hover p{
+    display : block;
+    top : -45%;
+    left : 75%;
+    width : 17%;
+  }
+
+  #Yooka:hover p{
+    display : block;
+    top : -40%;
+    left : 80%;
+    width : 15%;
+  }
+
+  #Yooka:hover{
+    height : auto;
+    display : block;
+    margin:0;
+    width : 100%;
+    padding : 0;
+}
+
+/* Début des sections en MQ : */
+.sectiongénérale{
+  display: flex;
+  
+}
+
+.mapArticle{
+  width : 100%;
+}
+
+h2{
+  width : 108%;
+  margin-left : 2%;
+  
+}
+
+.top3{
+  width : 45%;
+}
+
+
+.top3 img{
+  width : 100%;
+  height : auto;
+  justify-items: center;
+}
+
+.section2{
+  flex-direction: column;
+  width : 45%;
+  margin-left : 5%;
+}
+
+#lastTest{
+  margin-top: 0.5em;
+  width : 100%;
+  margin-left: 0;
+ 
+}
+
+
+
+.divDicey{
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#imgDicey {
+  width:71%;
+}
+
+.mapImages{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.botMarg{
+  margin-bottom: 0;
+}
+
+
+}
+/* Responsive styles pour les commentaires version mobile*/
+
+
+@media (max-width: 960px){
+    /* Make the paragraph in the comments take up the whole width,
+    forcing the avatar and user info to wrap to the next line*/
+    .comment p{
+        width: 100%;
+    }
+
+    /* Reverse the order of elements in the user comments,
+    so that the avatar and info appear after the text. */
+    .comment.user-comment .info{
+        order: 3;
+        text-align: left;
+    }
+
+    .comment.user-comment .avatar{
+        order: 2;
+    }
+
+    .comment.user-comment p{
+        order: 1;
+    }
+
+
+    /* Align toward the beginning of the container (to the left)
+    all the elements inside the author comments. */
+    .comment.author-comment{
+        justify-content: flex-start;
+    }
+
+
+    .comment-section{
+        margin-top: 10px;
+    }
+
+    .comment .info{
+        width: auto;
+    }
+
+    .comment .info a{
+        padding-top: 15px;
+    }
+
+    .comment.user-comment .avatar,
+    .comment.author-comment .avatar{
+        padding: 15px 10px 0 18px;
+        width: auto;
+    }
+
+    .comment.user-comment p:after,
+    .comment.author-comment p:after{
+        width: 12px;
+        height: 12px;
+        top: initial;
+        left: 28px;
+        bottom: -6px;
+    }
+
+    .write-new{
+        width: 100%;
+    }
+}
+
+
