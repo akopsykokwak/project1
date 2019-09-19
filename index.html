@@ -15,15 +15,15 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="home">
     <!-- menu burger pour la version mobile -->
     <div class="dropdown">
       <button class="dropbtn">&#x2630;</button>
       <div class="dropdown-content">
-        <a href="#">Sample reviews</a>
-        <a href="#">Top 3</a>
+        <a href="#lastReview">Sample reviews</a>
+        <a href="#top3">Top 3</a>
         <a href="#">Upcoming reviews</a>
-        <a href="#">Vote for next review</a>
+        <a href="##voteencour">Vote for next review</a>
         <a href="#">About & Contact</a>
       </div>
     </div>
@@ -52,16 +52,16 @@
       <div class="containNav">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Top</a></li>
-          <li><a href="#">Vote</a></li>
-          <li><a href="#">Reviews</a></li>
+          <li><a href="#top3">Top</a></li>
+          <li><a href="#voteencour">Vote</a></li>
+          <li><a href="#lastReview">Reviews</a></li>
           <li><a href="#">A propos</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
     </nav>
     <!-- carousel -->
-    <h2 id="lastTest">Derniers tests</h2>
+    <h2 id="lastTest h2change">Derniers tests</h2>
     <div id="slider">
       <figure>
         <img src="https://drive.google.com/uc?id=1gcAzicVGmYVKWPKVHBzQpFkk_2g58FGT" alt="Celeste">
@@ -73,7 +73,7 @@
 
     <!-- section last review desktop-->
 
-    <article class="testDesktop">
+    <article class="testDesktop" id="lastReview">
 
       <div class="divImageDesktop" id="Celeste">
         <img src="https://drive.google.com/uc?id=1gcAzicVGmYVKWPKVHBzQpFkk_2g58FGT" alt="Celeste">
@@ -91,9 +91,9 @@
     </article>
 
     <!-- Section top3 -->
-    <section class="sectiongénérale">
+    <section class="sectiongénérale" id="top3">
       <section class="top3">
-        <h2>Top 3</h2>
+        <h2 class ="h2change">Top 3</h2>
         <article class="mapArticle">
 
           <div>
@@ -149,7 +149,7 @@
 
       <!-- Section vote de la semaine dernière-->
       <section class="section2">
-        <h2>Vote de la semaine dernière</h2>
+        <h2 class ="h2change">Vote de la semaine dernière</h2>
         <article class="mapArticle">
           <div>
             <h3>Le gagnant est Dicey Dungeons !</h3>
@@ -168,9 +168,9 @@
 
         <!-- Vote de la semaine :-->
 
-        <h2>Vote à venir</h2>
+        <h2 class ="h2change">Vote à venir</h2>
 
-        <article class="mapArticle">
+        <article class="mapArticle" id="voteencour">
           <div class="divDifferente">
             <h3>Que souhaitez vous nous voir tester ?</h3>
 

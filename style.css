@@ -806,15 +806,13 @@ footer img{
 /* Début des sections en MQ : */
 .sectiongénérale{
   display: flex;
+  justify-content: center;
   
 }
 
-.mapArticle{
-  width : 100%;
-}
 
-h2{
-  width : 108%;
+.h2change{
+  width : 96%;
   margin-left : 2%;
   
 }
@@ -863,6 +861,13 @@ h2{
 
 .botMarg{
   margin-bottom: 0;
+}
+
+/*Footer*/
+
+footer{
+  flex-direction : row;
+  justify-content: space-around;
 }
 
 
