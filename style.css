@@ -182,6 +182,7 @@ nav {
 
 
 
+
 /* Section commentaire*/
 
 .comment{
@@ -376,7 +377,6 @@ nav {
     margin-top: 18px;
 }
 
-
 h2{
   font-family: 'Abel', sans-serif;
   display: flex;
@@ -491,6 +491,45 @@ p {
   background-color: #7C94A0;
 }
 
+/* About */
+
+.mapAbout{
+  display: flex;
+  flex-direction: column;
+  margin: 0 2%;
+  padding : 4%;
+  background-color: #D9D9D9;
+}
+
+.mapAbout img{
+  max-width: 50%;
+  height: auto;
+  margin-top: 0.4em;
+}
+
+.aboutTexte{
+  display: flex;
+  align-items: center;
+  padding-top: 0.6em;
+  margin-top: 0.6em;
+}
+
+.aboutTexte p{
+  align-self: center;
+}
+
+
+/* Contact */
+
+
+.contact input, textarea{
+  width: 88%;
+  font-family: 'Libre Franklin';
+  padding: 10px;
+  margin: 10px;
+}
+
+
 footer{
     background-color: #6b2727;
     border-top: 10px solid #355160;
@@ -526,6 +565,70 @@ footer img{
     display: flex;
 }
 
+
+/* Responsive styles pour les commentaires version mobile*/
+
+@media (max-width: 960px){
+    /* Make the paragraph in the comments take up the whole width,
+    forcing the avatar and user info to wrap to the next line*/
+    .comment p{
+        width: 100%;
+    }
+
+    /* Reverse the order of elements in the user comments,
+    so that the avatar and info appear after the text. */
+    .comment.user-comment .info{
+        order: 3;
+        text-align: left;
+    }
+
+    .comment.user-comment .avatar{
+        order: 2;
+    }
+
+    .comment.user-comment p{
+        order: 1;
+    }
+
+
+    /* Align toward the beginning of the container (to the left)
+    all the elements inside the author comments. */
+    .comment.author-comment{
+        justify-content: flex-start;
+    }
+
+
+    .comment-section{
+        margin-top: 10px;
+    }
+
+    .comment .info{
+        width: auto;
+    }
+
+    .comment .info a{
+        padding-top: 15px;
+    }
+
+    .comment.user-comment .avatar,
+    .comment.author-comment .avatar{
+        padding: 15px 10px 0 18px;
+        width: auto;
+    }
+
+    .comment.user-comment p:after,
+    .comment.author-comment p:after{
+        width: 12px;
+        height: 12px;
+        top: initial;
+        left: 28px;
+        bottom: -6px;
+    }
+
+    .write-new{
+        width: 100%;
+    }
+}
 
 /* Début du mediaQueries */
 
@@ -627,69 +730,3 @@ footer img{
 }
 
 }
-
-
-/* Responsive styles pour les commentaires version mobile*/
-
-@media (max-width: 960px){
-    /* Make the paragraph in the comments take up the whole width,
-    forcing the avatar and user info to wrap to the next line*/
-    .comment p{
-        width: 100%;
-    }
-
-    /* Reverse the order of elements in the user comments,
-    so that the avatar and info appear after the text. */
-    .comment.user-comment .info{
-        order: 3;
-        text-align: left;
-    }
-
-    .comment.user-comment .avatar{
-        order: 2;
-    }
-
-    .comment.user-comment p{
-        order: 1;
-    }
-
-
-    /* Align toward the beginning of the container (to the left)
-    all the elements inside the author comments. */
-    .comment.author-comment{
-        justify-content: flex-start;
-    }
-
-
-    .comment-section{
-        margin-top: 10px;
-    }
-
-    .comment .info{
-        width: auto;
-    }
-
-    .comment .info a{
-        padding-top: 15px;
-    }
-
-    .comment.user-comment .avatar,
-    .comment.author-comment .avatar{
-        padding: 15px 10px 0 18px;
-        width: auto;
-    }
-
-    .comment.user-comment p:after,
-    .comment.author-comment p:after{
-        width: 12px;
-        height: 12px;
-        top: initial;
-        left: 28px;
-        bottom: -6px;
-    }
-
-    .write-new{
-        width: 100%;
-    }
-}
-
