@@ -283,9 +283,13 @@ p {
 
 .aboutTexte{
   display: flex;
-  justify-content: space-around;
+  align-items: center;
   padding-top: 0.6em;
   margin-top: 0.6em;
+}
+
+.aboutTexte p{
+  align-self: center;
 }
 
 
