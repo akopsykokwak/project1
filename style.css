@@ -51,7 +51,7 @@ div#slider figure {
       }
 
       /* fin du carousel*/
-      
+
 .header {
   background-color: #355160;
   border-bottom: 3px solid #6B2727;
@@ -179,6 +179,7 @@ nav {
 }
 
 /* Background main */
+
 
 
 
@@ -376,7 +377,9 @@ nav {
     margin-top: 18px;
 }
 
+
 /* fin de sect commment*/
+
 
 h2{
   font-family: 'Abel', sans-serif;
@@ -430,9 +433,48 @@ h3 a {
   display: block;
 }
 
+.review{
+  width:calc(100% - 0.8em);
+  margin-right: 0.4em;
+  margin-left: 0.4em;
+}
+
+.list-review{
+  list-style-type: none;
+  font-family: 'Libre Franklin', sans-serif;
+  margin: 0.8em auto;
+}
+
+.vignette{
+  width:100%;
+  height : auto;
+}
+
+.flex-container-row{
+  display:flex;
+  flex-direction:row;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  align-items: center;
+}
+
+.flex-vignette-review{
+  display:flex;
+  flex-direction:column;
+  min-width: 20%;
+  align-items:center;
+  justify-content: center;
+
+}
+
+p .review{
+  width: 65%;
+  }
+
 h4{
   font-family:'Abel', sans-serif;
   font-variant:small-caps;
+  margin-bottom: 0.8em;
 
 }
 
@@ -449,7 +491,7 @@ p {
 
 .voteBouton{
   margin-left: 40%;
-  
+
 }
 
 .voteBouton a{
@@ -492,6 +534,45 @@ p {
   background-color: #7C94A0;
 }
 
+/* About */
+
+.mapAbout{
+  display: flex;
+  flex-direction: column;
+  margin: 0 2%;
+  padding : 4%;
+  background-color: #D9D9D9;
+}
+
+.mapAbout img{
+  max-width: 50%;
+  height: auto;
+  margin-top: 0.4em;
+}
+
+.aboutTexte{
+  display: flex;
+  align-items: center;
+  padding-top: 0.6em;
+  margin-top: 0.6em;
+}
+
+.aboutTexte p{
+  align-self: center;
+}
+
+
+/* Contact */
+
+
+.contact input, textarea{
+  width: 88%;
+  font-family: 'Libre Franklin';
+  padding: 10px;
+  margin: 10px;
+}
+
+
 footer{
     background-color: #6b2727;
     border-top: 10px solid #355160;
@@ -528,6 +609,70 @@ footer img{
 }
 
 
+/* Responsive styles pour les commentaires version mobile*/
+
+@media (max-width: 960px){
+    /* Make the paragraph in the comments take up the whole width,
+    forcing the avatar and user info to wrap to the next line*/
+    .comment p{
+        width: 100%;
+    }
+
+    /* Reverse the order of elements in the user comments,
+    so that the avatar and info appear after the text. */
+    .comment.user-comment .info{
+        order: 3;
+        text-align: left;
+    }
+
+    .comment.user-comment .avatar{
+        order: 2;
+    }
+
+    .comment.user-comment p{
+        order: 1;
+    }
+
+
+    /* Align toward the beginning of the container (to the left)
+    all the elements inside the author comments. */
+    .comment.author-comment{
+        justify-content: flex-start;
+    }
+
+
+    .comment-section{
+        margin-top: 10px;
+    }
+
+    .comment .info{
+        width: auto;
+    }
+
+    .comment .info a{
+        padding-top: 15px;
+    }
+
+    .comment.user-comment .avatar,
+    .comment.author-comment .avatar{
+        padding: 15px 10px 0 18px;
+        width: auto;
+    }
+
+    .comment.user-comment p:after,
+    .comment.author-comment p:after{
+        width: 12px;
+        height: 12px;
+        top: initial;
+        left: 28px;
+        bottom: -6px;
+    }
+
+    .write-new{
+        width: 100%;
+    }
+}
+
 /* Début du mediaQueries */
 
 @media only screen and (min-width : 961px){
@@ -548,7 +693,7 @@ footer img{
   nav{
     display : block;
     background-color: #7C94A0;
-    
+
   }
   nav ul{
     list-style-type: none;
@@ -590,7 +735,7 @@ footer img{
   .divImageDesktop{
     width : 33%;
     height : auto;
-    
+
   }
 
 
@@ -600,13 +745,13 @@ footer img{
  }
 
  #Celeste:hover{
-   
+
    width : 100%;
    height : auto;
    display : block;
    margin:0;
    padding : 0;
-   
+
  }
 
  .testDesktop p{
@@ -677,6 +822,7 @@ h2{
 .top3{
   width : 45%;
 }
+
 
 .top3 img{
   width : 100%;
@@ -785,4 +931,5 @@ h2{
         width: 100%;
     }
 }
+
 
