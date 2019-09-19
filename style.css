@@ -746,7 +746,7 @@ footer img{
 .generalAbout {
   display: flex;
   align-items: baseline;
-  margin: 0 2%;
+  margin: 0 27px;
 }
 
 .mapAbout{
@@ -764,7 +764,7 @@ footer img{
 /* Contact */
 
 .mapContact{
-  margin: 0 37px;
+  margin: 0 38px;
 }
 
 
