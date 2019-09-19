@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,95 +14,109 @@
 
 </head>
 
-  <body>
-     <header class="header">
-    <!-- menu burger pour la version mobile -->
-    <div class="dropdown">
-     <button class="dropbtn">&#x2630;</button>
-       <div class="dropdown-content">
-         <a href="#">Sample reviews</a>
-         <a href="#">Top 3</a>
-         <a href="#">Upcoming reviews</a>
-         <a href="#">Vote for next review</a>
-         <a href="#">About & Contact</a>
-      </div>
-    </div>
+<body>
+    <header class="header">
+        <!-- menu burger pour la version mobile -->
+        <div class="dropdown">
+            <button class="dropbtn">&#x2630;</button>
+            <div class="dropdown-content">
+                <a href="#">Sample reviews</a>
+                <a href="#">Top 3</a>
+                <a href="#">Upcoming reviews</a>
+                <a href="#">Vote for next review</a>
+                <a href="#">About & Contact</a>
+            </div>
+        </div>
 
-<!-- To do : ajouter logo -->
+        <!-- To do : ajouter logo -->
 
-    <h1><a class="home-button" href="index.html">indé:(moddable)</a></h1>
+        <h1><a class="home-button" href="index.html">indé:(moddable)</a></h1>
 
-<!-- Search bar -->
+        <!-- Search bar -->
 
-    <form class="search-bar" action="action_page.php">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
+        <form class="search-bar" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
 
-<!-- nav pour la version desktop-->
-
-       <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Top</a></li>
-                <li><a href="#">Vote</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
 
     </header>
 
 
 
 
-<!-- Début main content -->
+    <!-- Début main content -->
 
-  <main>
+    <main>
 
-    <!-- Section about -->
+        <!-- nav pour la version desktop-->
 
-<section>
-    <h2>A propos</h2>
-    <article class="mapAbout">
-        <h3><a href="">DeeepDeep</a></h3>
-        <div class="aboutTexte">
-            <img src="https://drive.google.com/uc?id=1m8FD9_BZiyDoiV1qc0nGF-rqu496mLy7" alt="">
-            <p>26 ans, bientôt 35, j'apprécie grandement les jeux vidéos, lire des livres avec des mots dedans ainsi que les tournures syntaxiques alambiquées. N'hésitez pas à lire ma thèse avec plein de pages dedans.</p>
-        </div>
-    </article>
-    <article class="mapAbout">
-        <h3><a href="">Coin-Coin</a></h3>
-        <div class="aboutTexte">
-            <img src="https://drive.google.com/uc?id=14su_0lwkd-o24tGSBpIpTVwfeXMkB7T4" alt="">
-            <p>26 ans. Kawaii & Emo lifestyle. J'adore la japanimation et faire du DIY. N'hésitez pas à checker ma chaîne youtube, il y a du bon contenu.</p>
-        </div>
-    </article>
-    <article class="mapAbout">
-        <h3><a href="">MrGlup</a></h3>
-        <div class="aboutTexte">
-            <img src="https://drive.google.com/uc?id=1HF8WOT4z53Xn8FyB1uAaXa-ktDBfKLf_" alt="Des personnages du jeu semblent se défendre contre leur environnement">
-            <p>26 ans, jeune et dynamique, j'adore la sculpture sur galet, les die and retry et le cinéma sino-coréen des années 70. N'hésitez pas à passer me voir sur MrGlup TV.</p>
-        </div>
-    </article>
-</section>
+        <nav>
+            <div class="containNav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Top</a></li>
+                    <li><a href="#">Vote</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
-<!-- Section contact-->
+        <!-- Section about -->
 
-  <h2>Contact</h2>
-    <article class="mapArticle">
-        <div class="contact">
-            <form class="contact">
-              <input type="email" placeholder="Adresse mail">
-              <input type="text" placeholder="Sujet">
-              <textarea id="subject" name="subject" rows ="6" placeholder="A vous de jouer !"></textarea>
-              <input type="submit" value="Envoyez !" style="width:94%">
-            </form>
-        </div>
-  </article>
+        <h2>A propos</h2>
+        <section class="generalAbout">
+            <section class="mini">
+                <article class="mapAbout">
+                    <h3><a href="">DeeepDeep</a></h3>
+                    <div class="aboutTexte">
+                        <img src="https://drive.google.com/uc?id=1m8FD9_BZiyDoiV1qc0nGF-rqu496mLy7" alt="">
+                        <p>26 ans, bientôt 35, j'apprécie grandement les jeux vidéos, lire des livres avec des mots
+                            dedans ainsi que les tournures syntaxiques alambiquées. N'hésitez pas à lire ma thèse avec
+                            plein de pages dedans.</p>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <article class="mapAbout">
+                    <h3><a href="">Coin-Coin</a></h3>
+                    <div class="aboutTexte">
+                        <img src="https://drive.google.com/uc?id=14su_0lwkd-o24tGSBpIpTVwfeXMkB7T4" alt="">
+                        <p>26 ans. Kawaii & Emo lifestyle. J'adore la japanimation et faire du DIY. N'hésitez pas à
+                            checker ma chaîne youtube, il y a du bon contenu.</p>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <article class="mapAbout">
+                    <h3><a href="">MrGlup</a></h3>
+                    <div class="aboutTexte">
+                        <img src="https://drive.google.com/uc?id=1HF8WOT4z53Xn8FyB1uAaXa-ktDBfKLf_"
+                            alt="Des personnages du jeu semblent se défendre contre leur environnement">
+                        <p>26 ans, jeune et dynamique, j'adore la sculpture sur galet, les die and retry et le cinéma
+                            sino-coréen des années 70. N'hésitez pas à passer me voir sur MrGlup TV.</p>
+                    </div>
+                </article>
+            </section>
+        </section>
 
-  </main>
+        <!-- Section contact-->
+
+        <h2>Contact</h2>
+        <article class="mapContact">
+            <div class="contact">
+                <form class="contact">
+                    <input type="email" placeholder="Adresse mail">
+                    <input type="text" placeholder="Sujet">
+                    <textarea id="subject" name="subject" rows="6" placeholder="A vous de jouer !"></textarea>
+                    <input type="submit" value="Envoyez !" style="width:94%">
+                </form>
+            </div>
+        </article>
+
+    </main>
 
 
     <div class="filler"></div>
@@ -117,31 +132,36 @@
             <ul class="icones">
                 <li>
                     <a href="https://tel.archives-ouvertes.fr/tel-02007423" title="facebook" target="_blank">
-                        <img class="icon" src="https://drive.google.com/uc?id=1DRkIjVY92te_Icf2hHx4itFWFCN1mjXI" alt="Facebook"/>
+                        <img class="icon" src="https://drive.google.com/uc?id=1DRkIjVY92te_Icf2hHx4itFWFCN1mjXI"
+                            alt="Facebook" />
                     </a>
                 </li>
                 <li>
                     <a href="http://museumofinter.net/" title="twitter" target="_blank">
-                        <img class="icon" src="https://drive.google.com/uc?id=1yUJ3cp9n0XqWNgheu3JPKkqVlQga780m" alt="Twitter"/>
+                        <img class="icon" src="https://drive.google.com/uc?id=1yUJ3cp9n0XqWNgheu3JPKkqVlQga780m"
+                            alt="Twitter" />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com/user/kumonijiako" title="youtube" target="_blank">
-                        <img class="icon" src="https://drive.google.com/uc?id=1YrYoP_6-qecSZD1IMzVVbmY1VgSeasbK" alt="Youtube"/>
+                        <img class="icon" src="https://drive.google.com/uc?id=1YrYoP_6-qecSZD1IMzVVbmY1VgSeasbK"
+                            alt="Youtube" />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.twitch.tv/mrrrrrggllup" title="twitch" target="_blank">
-                        <img class="icon" src="https://drive.google.com/uc?id=1JmMTQK6APITgWls6bqWtx1aFa4MfEduL" alt="Twitch"/>
+                        <img class="icon" src="https://drive.google.com/uc?id=1JmMTQK6APITgWls6bqWtx1aFa4MfEduL"
+                            alt="Twitch" />
                     </a>
                 </li>
             </ul>
         </div>
         <div class="copyright">
-            	© indé:(moddable), 2019.
+            © indé:(moddable), 2019.
         </div>
-      </footer>
+    </footer>
 
 
 </body>
+
 </html>
