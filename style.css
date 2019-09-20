@@ -20,7 +20,7 @@ h1{
 #Logo {
   width : 100%;
   height : auto;
-  
+
 }
 
 nav{
@@ -130,7 +130,7 @@ div#slider figure {
 
 
 h1{
- 
+
   font-family: 'Abel', sans-serif;
   color: white;
   text-shadow: 2px 0 0 #6B2727, -2px 0 0 #fff, 0 2px 0 #6B2727, 0 -2px 0 #6B2727, 1px 1px #6B2727, -1px -1px 0 #6B2727, 1px -1px 0 #6B2727, -1px 1px 0 #fff;
@@ -414,6 +414,13 @@ h2{
   flex-direction: row;
   justify-content: space-between;
   padding : 0.4em 0.8em;
+  font-family: 'Abel', sans-serif;
+  margin-top: 0.5em;
+  background-color: #7C94A0;
+
+
+
+
 }
 
 .h2flex div{
@@ -463,10 +470,7 @@ h3 a {
   margin: 0.8em auto;
 }
 
-.vignette{
-  width:100%;
-  height : auto;
-}
+
 
 .flex-container{
   display:flex;
@@ -479,6 +483,8 @@ h3 a {
 .flex-container-row{
   display:flex;
   flex-direction: row;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
 }
 
 .flex-vignette-review{
@@ -487,6 +493,7 @@ h3 a {
   min-width: 20%;
   align-items:center;
   justify-content: center;
+  max-height: 200px;
 
 }
 
@@ -498,6 +505,7 @@ h4{
   font-family:'Abel', sans-serif;
   font-variant:small-caps;
   margin-bottom: 0.8em;
+  hyphens: none;
 
 }
 
@@ -598,7 +606,7 @@ p {
 }
 
 
-.contact input, textarea, button{
+.contact input textarea button{
   width: 88%;
   font-family: 'Libre Franklin';
   padding: 10px;
@@ -725,7 +733,7 @@ h1{
     width : 10%;
     height :auto;
     margin-left : -30%;
-  
+
   }
 
   .top3{
@@ -898,6 +906,7 @@ h1{
  .flex-container-row{
    width: calc(30% - 1em);
    flex-direction:column;
+   align-self: flex-start;
  }
  .summary{
    flex-direction:column;
