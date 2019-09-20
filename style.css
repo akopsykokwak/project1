@@ -606,11 +606,18 @@ p {
 }
 
 
-.contact input, textarea{
+.contact input, textarea, button{
   width: 88%;
   font-family: 'Libre Franklin';
   padding: 10px;
   margin: 10px;
+  -moz-box-sizing: content-box; /* or `border-box` */
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.contact button{
+justify-content: center;
 }
 
 
@@ -963,12 +970,22 @@ h1{
 
 .generalAbout {
   display: flex;
-  align-items: baseline;
-  margin: 0 27px;
+  margin: 0 38px;
+  align-items: stretch;
+  background-color: #D9D9D9;
 }
+
+.mini{
+  width: calc(34% - 0.5em);
+}
+
 
 .mapAbout{
   padding: 15px;
+}
+
+.mapAbout img{
+  max-width: 100%;
 }
 
 .aboutTexte{
@@ -978,6 +995,8 @@ h1{
 .aboutTexte p {
   padding: 15px;
 }
+
+
 
 /* Contact */
 
@@ -990,8 +1009,11 @@ h1{
   justify-content: center;
 }
 
-.contact input, textarea{
-  width: 91%;
+.contact input, textarea, button{
+  -moz-box-sizing: content-box; /* or `border-box` */
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-left: 5%;
 
 }
 
@@ -1011,7 +1033,7 @@ h1{
 footer{
   flex-direction : row;
   justify-content: space-around;
-
+}
 
 
 }
@@ -1078,5 +1100,4 @@ footer{
     .write-new{
         width: 100%;
     }
-}
 }
