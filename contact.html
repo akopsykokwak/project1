@@ -2,67 +2,67 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Abel|Libre+Franklin&display=swap" rel="stylesheet">
-    <title>indé:(moddable)</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap" rel="stylesheet">
+  <title>indé:(moddable)</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-    <header class="header">
-        <!-- menu burger pour la version mobile -->
-        <div class="dropdown">
-            <button class="dropbtn">&#x2630;</button>
-            <div class="dropdown-content">
-                <a href="#">Sample reviews</a>
-                <a href="#">Top 3</a>
-                <a href="#">Upcoming reviews</a>
-                <a href="#">Vote for next review</a>
-                <a href="#">About & Contact</a>
-            </div>
-        </div>
+  <header class="header" id="home">
+    <!-- menu burger pour la version mobile -->
+    <div class="dropdown">
+      <button class="dropbtn">&#x2630;</button>
+      <div class="dropdown-content">
+        <a href="index.html#lastReview">Les Tests</a>
+        <a href="index.html#top3">Les Tops</a>
+        <a href="index.html#voteencour">Vote de la commu</a>
+        <a href="contact.html">About & Contact</a>
+      </div>
+    </div>
 
-        <!-- To do : ajouter logo -->
-
-        <h1><a class="home-button" href="index.html">indé:(moddable)</a></h1>
-
-        <!-- Search bar -->
-
-        <form class="search-bar" action="action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
+    <!-- To do : ajouter logo -->
+    <div class="divLogo">
+      <a href="index.html"><img id="Logo" src="https://drive.google.com/uc?id=1aiwO4Ks0VBgEFIqQXcNjWBADC-GNU8kc" alt="logo trop cool"></a>
+    </div>
 
 
-    </header>
+    <h1><a class="home-button" href="index.html">indé:(moddable)</a></h1>
+
+    <!-- Search bar -->
+
+    <form class="search-bar" action="action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </header>
 
 
 
 
-    <!-- Début main content -->
+  <!-- Début main content -->
+  <main>
 
-    <main>
+    <!-- nav pour la version desktop-->
 
-        <!-- nav pour la version desktop-->
-
-        <nav>
-            <div class="containNav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Top</a></li>
-                    <li><a href="#">Vote</a></li>
-                    <li><a href="#">Reviews</a></li>
-                    <li><a href="#">A propos</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+    <nav>
+      <div class="containNav">
+        <ul>
+          <li><a href="index.html#top3">Les Tops</a></li>
+          <li><a href="index.html#voteencour">Vote de la commu</a></li>
+          <li><a href="index.html#lastReview">Les Tests</a></li>
+          <li><a href="contact.html">A propos</a></li>
+          <li><a href="contact.html#contacts">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
         <!-- Section about -->
 
@@ -105,7 +105,7 @@
         <!-- Section contact-->
 
         <h2>Contact</h2>
-        <article class="mapContact">
+        <article class="mapContact" id="contacts">
             <div class="contact">
                 <form class="contact">
                     <input type="email" placeholder="Adresse mail">
