@@ -8,6 +8,21 @@ body{
   background-color: #E9E9E9;
 }
 
+h1{
+  display : none;
+}
+.divLogo{
+  width : 20%;
+  height :auto;
+
+}
+
+#Logo {
+  width : 100%;
+  height : auto;
+  
+}
+
 nav{
     display : none;
 }
@@ -58,6 +73,7 @@ div#slider figure {
   padding: 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* bidouille from : https://www.w3schools.com/howto/howto_css_dropdown.asp */
@@ -112,7 +128,9 @@ div#slider figure {
 
 /*fin du tuto */
 
+
 h1{
+ 
   font-family: 'Abel', sans-serif;
   color: white;
   text-shadow: 2px 0 0 #6B2727, -2px 0 0 #fff, 0 2px 0 #6B2727, 0 -2px 0 #6B2727, 1px 1px #6B2727, -1px -1px 0 #6B2727, 1px -1px 0 #6B2727, -1px 1px 0 #fff;
@@ -151,7 +169,7 @@ form.search-bar input[type=text] {
 /* Style the submit button */
 form.search-bar button {
   margin-right: 0;
-  min-width: 35%;
+  min-width: 30px;
   max-width:36%;
   height: auto;
   padding: 10px;
@@ -700,6 +718,17 @@ footer img{
 
 @media only screen and (min-width : 961px){
 
+h1{
+  display : block;
+}
+
+  .divLogo{
+    width : 10%;
+    height :auto;
+    margin-left : -30%;
+  
+  }
+
   .top3{
     margin-top : 0;
   }
@@ -729,6 +758,11 @@ footer img{
   nav ul li a:hover{
     color : #6b2727;
     font-weight: bolder;
+  }
+
+  h3 a:hover{
+    color : #6b2727;
+    font-size: 2em;
   }
 
   nav ul li a{
@@ -813,7 +847,7 @@ footer img{
 
   #Yooka:hover p{
     display : block;
-    top : -40%;
+    top : -50%;
     left : 80%;
     width : 15%;
   }
@@ -977,8 +1011,7 @@ footer img{
 footer{
   flex-direction : row;
   justify-content: space-around;
->>>>>>> dev2
-}
+
 
 
 }
@@ -1045,4 +1078,5 @@ footer{
     .write-new{
         width: 100%;
     }
+}
 }
