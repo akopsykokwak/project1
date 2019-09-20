@@ -1,13 +1,79 @@
-* {
-  margin: 0;
-  padding: 0;
+
+*{
+    margin : 0;
+    padding : 0;
 }
 
+body{
+  background-color: #E9E9E9;
+}
+
+h1{
+  display : none;
+}
+.divLogo{
+  width : 20%;
+  height :auto;
+
+}
+
+#Logo {
+  width : 100%;
+  height : auto;
+
+}
+
+nav{
+    display : none;
+}
+
+.testDesktop{
+  display : none;
+}
+
+/* Le carousel*/
+
+div#slider {
+    width: 100%;
+    max-width: 1280px;
+    overflow: hidden
+}
+
+div#slider figure {
+    position: relative;
+    width: 400%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+    animation: 18s slidy infinite;
+  }
+
+  div#slider figure img {
+      width: 25%;
+      height: auto;
+      float: left;
+    }
+
+    @keyframes slidy {
+        0% { left: 0%; }
+        30% { left: 0%; }
+        35% { left: -100%; }
+        65% { left: -100%; }
+        70% { left: -200%; }
+        95% { left: -200%; }
+        100% { left: -300%; }
+      }
+
+      /* fin du carousel*/
+
 .header {
-  background-color: #7C94A0;
+  background-color: #355160;
+  border-bottom: 3px solid #6B2727;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* bidouille from : https://www.w3schools.com/howto/howto_css_dropdown.asp */
@@ -62,7 +128,9 @@
 
 /*fin du tuto */
 
+
 h1{
+
   font-family: 'Abel', sans-serif;
   color: white;
   text-shadow: 2px 0 0 #6B2727, -2px 0 0 #fff, 0 2px 0 #6B2727, 0 -2px 0 #6B2727, 1px 1px #6B2727, -1px -1px 0 #6B2727, 1px -1px 0 #6B2727, -1px 1px 0 #fff;
@@ -101,7 +169,8 @@ form.search-bar input[type=text] {
 /* Style the submit button */
 form.search-bar button {
   margin-right: 0;
-  width: 25%;
+  min-width: 30px;
+  max-width:36%;
   height: auto;
   padding: 10px;
   color: white;
@@ -127,9 +196,435 @@ nav {
   display: none;
 }
 
+/* Background main */
+
+
+
+
+/* Section commentaire*/
+
+.comment{
+    display: flex;
+}
+
+.comment.author-comment{
+    justify-content: flex-end;
+}
+
+.comment.author-comment .info{
+    order: 3;
+}
+
+.comment.author-comment .avatar{
+    order: 2;
+}
+
+.comment.author-comment p{
+    order: 1;
+}
+
+.comment-section{
+    list-style: none;
+    max-width: 90%;
+    min-width: 60%;
+    margin: 0.4em auto;
+    padding: 0.4em;
+}
+
+.comment{
+    display: flex;
+    border-radius: 3px;
+    margin-bottom: 0.4em;
+    flex-wrap: wrap;
+}
+
+.comment.user-comment{
+    color:  #808080;
+}
+
+.comment.author-comment{
+    color:  #60686d;
+    justify-content: flex-end;
+}
+
+/* User and time info */
+
+.comment .info{
+    width: 17%;
+}
+
+.comment.user-comment .info{
+    text-align: right;
+}
+
+.comment.author-comment .info{
+    order: 3;
+}
+
+
+.comment .info a{	/* User name */
+    display: block;
+    text-decoration: none;
+    color: #656c71;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0 3px 0;
+}
+
+.comment .info span{	/* Time */
+    font-size: 11px;
+    color:  #9ca7af;
+}
+
+
+/* The user avatar */
+
+.comment .avatar{
+    width: 8%;
+}
+
+.comment.user-comment .avatar{
+    padding: 10px 18px 0 3px;
+}
+
+.comment.author-comment .avatar{
+    order: 2;
+    padding: 10px 3px 0 18px;
+}
+
+.comment .avatar img{
+    display: block;
+    border-radius: 50%;
+}
+
+.comment.user-comment .avatar img{
+    float: right;
+}
+
+
+
+
+
+/* The comment text */
+
+.comment p{
+    line-height: 1.5;
+    padding: 18px 22px;
+    width: 50%;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.comment.user-comment p{
+    background-color:  #F3F3F3;
+}
+
+.comment.author-comment p{
+    background-color:  #D6D6D6;
+    order: 1;
+}
+
+.user-comment p:after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #f3f3f3;
+    left: -8px;
+    top: 18px;
+}
+
+.author-comment p:after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #e2f8ff;
+    right: -8px;
+    top: 18px;
+}
+
+
+
+
+/* Comment form */
+
+.write-new{
+    margin: 3em auto 0;
+    width: 50%;
+}
+
+.write-new textarea{
+    color:  #444;
+    font: inherit;
+
+    outline: 0;
+    border-radius: 3px;
+    border: 1px solid #cecece;
+    background-color:  #fefefe;
+    box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.06);
+    overflow: auto;
+
+    width:90%;
+    min-height: 80px;
+    padding: 0.4em 1em;
+}
+
+.write-new img{
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.write-new button{
+    float:right;
+    background-color:  #6B2727;
+    box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    border: 0;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+
+    padding: 10px 25px;
+    margin-top: 18px;
+}
+
+
+/* fin de sect commment*/
+
+
+h2{
+  font-family: 'Abel', sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: #7C94A0;
+  margin-top: 0.5em;
+  width : 100%;
+}
+
+.h2flex{
+  max-width: calc(100% - 1.6em);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding : 0.4em 0.8em;
+  font-family: 'Abel', sans-serif;
+  margin-top: 0.5em;
+  background-color: #7C94A0;
+
+
+
+
+}
+
+.h2flex div{
+  width: calc(50% - 1em);
+}
+
+.block{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.block:hover{
+  background-color: #6B2727;
+  color: white;
+}
+
+.mapArticle img{
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.4em;
+}
+
+h3 {
+  font-family: 'Abel', sans-serif;
+  margin-top: 0.4em;
+  padding-left: 0.4em;
+  border-bottom: 2px solid #6B2727;
+}
+
+h3 a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.review{
+  width:calc(100% - 0.8em);
+  margin-right: 0.4em;
+  margin-left: 0.4em;
+}
+
+.list-review{
+  list-style-type: none;
+  font-family: 'Libre Franklin', sans-serif;
+  margin: 0.8em auto;
+}
+
+
+
+.flex-container{
+  display:flex;
+  flex-direction:column;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  align-items: center;
+}
+
+.flex-container-row{
+  display:flex;
+  flex-direction: row;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+.flex-vignette-review{
+  display:flex;
+  flex-direction:column;
+  min-width: 20%;
+  align-items:center;
+  justify-content: center;
+  max-height: 200px;
+
+}
+
+p .review{
+  width: 65%;
+  }
+
+h4{
+  font-family:'Abel', sans-serif;
+  font-variant:small-caps;
+  margin-bottom: 0.8em;
+  hyphens: none;
+
+}
+
+p {
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: justify;
+  padding: 0 0.4em;
+  margin: 0 0.4em;
+
+}
+.divDifferente{
+  width: 100%;
+}
+
+.voteBouton{
+  margin-left: 40%;
+
+}
+
+.voteBouton a{
+  text-decoration: none;
+  color : black;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.mapArticle{
+  display : flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2%;
+  padding : 4%;
+  background-color: #D9D9D9;
+}
+
+
+
+.botMarg{
+  margin-bottom: 3%;
+}
+
+.lesJeux{
+  align-self: flex-start;
+  margin-left : 22%;
+  margin-top : 3%;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.Blasphemous{
+  margin-top : 8%;
+}
+
+
+.filler{
+  height: 5px;
+  margin:0;
+  background-color: #7C94A0;
+}
+
+/* About */
+
+.mapAbout{
+  display: flex;
+  flex-direction: column;
+  margin: 0 2%;
+  padding : 4%;
+  background-color: #D9D9D9;
+}
+
+.mapAbout img{
+  max-width: 50%;
+  height: auto;
+  margin-top: 0.4em;
+}
+
+.aboutTexte{
+  display: flex;
+  align-items: center;
+  padding-top: 0.6em;
+  margin-top: 0.6em;
+}
+
+.aboutTexte p{
+  align-self: center;
+}
+
+
+/* Contact */
+
+.mapContact{
+  display : flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2%;
+  padding : 4%;
+  background-color: #D9D9D9;
+}
+
+
+.contact input textarea button{
+  width: 88%;
+  font-family: 'Libre Franklin';
+  padding: 10px;
+  margin: 10px;
+  -moz-box-sizing: content-box; /* or `border-box` */
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.contact button{
+justify-content: center;
+}
+
+
 footer{
     background-color: #6b2727;
-    padding: 5%;
+    border-top: 10px solid #355160;
+    padding: 2%;
     font-family: 'Libre Franklin';
     display: flex;
     color: white;
@@ -145,13 +640,12 @@ footer{
     margin-top: 10px;
 }
 
-
-li{
+footer li{
     list-style-type: none;
-    padding: 15px;
+    padding: 5px;
 }
 
-img{
+footer img{
     width: 35px;
     height: auto;
     filter: invert(1);
@@ -160,4 +654,450 @@ img{
 
 .icones{
     display: flex;
+}
+
+
+/* Responsive styles pour les commentaires version mobile*/
+
+@media (max-width: 960px){
+    /* Make the paragraph in the comments take up the whole width,
+    forcing the avatar and user info to wrap to the next line*/
+    .comment p{
+        width: 100%;
+    }
+
+    /* Reverse the order of elements in the user comments,
+    so that the avatar and info appear after the text. */
+    .comment.user-comment .info{
+        order: 3;
+        text-align: left;
+    }
+
+    .comment.user-comment .avatar{
+        order: 2;
+    }
+
+    .comment.user-comment p{
+        order: 1;
+    }
+
+
+    /* Align toward the beginning of the container (to the left)
+    all the elements inside the author comments. */
+    .comment.author-comment{
+        justify-content: flex-start;
+    }
+
+
+    .comment-section{
+        margin-top: 10px;
+    }
+
+    .comment .info{
+        width: auto;
+    }
+
+    .comment .info a{
+        padding-top: 15px;
+    }
+
+    .comment.user-comment .avatar,
+    .comment.author-comment .avatar{
+        padding: 15px 10px 0 18px;
+        width: auto;
+    }
+
+    .comment.user-comment p:after,
+    .comment.author-comment p:after{
+        width: 12px;
+        height: 12px;
+        top: initial;
+        left: 28px;
+        bottom: -6px;
+    }
+
+    .write-new{
+        width: 100%;
+    }
+}
+
+/* Début du mediaQueries */
+
+@media only screen and (min-width : 961px){
+
+h1{
+  display : block;
+}
+
+  .divLogo{
+    width : 10%;
+    height :auto;
+    margin-left : -30%;
+
+  }
+
+  .top3{
+    margin-top : 0;
+  }
+  /* Navbar et disparition burger*/
+
+  .dropbtn{
+    display : none;
+  }
+  .containNav{
+    width : 50%;
+    margin : 0 25%;
+  }
+
+  nav{
+    display : block;
+    background-color: #7C94A0;
+
+  }
+  nav ul{
+    list-style-type: none;
+    text-decoration: none;
+    display : flex;
+    justify-content: space-around;
+    padding : 2% 0;
+  }
+
+  nav ul li a:hover{
+    color : #6b2727;
+    font-weight: bolder;
+  }
+
+  h3 a:hover{
+    color : #6b2727;
+    font-size: 2em;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    color : black;
+    font-family: 'Libre Franklin', sans-serif;
+  }
+
+  /* disparition carousel et appartition img */
+
+  #slider{
+    display : none ;
+  }
+
+  .testDesktop{
+
+    height : 480px;
+    display : flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    overflow: hidden;
+
+  }
+
+  .divImageDesktop{
+    width : 33%;
+    height : auto;
+
+  }
+
+
+ .testDesktop img{
+   width : 100%;
+   height : auto;
+ }
+
+ #Celeste:hover{
+
+   width : 100%;
+   height : auto;
+   display : block;
+   margin:0;
+   padding : 0;
+
+ }
+
+ .testDesktop p{
+
+  display : none;
+  position : relative;
+  top : -20%;
+  left : 70%;
+  background-color: #D9D9D9;
+  font-size: 2em;
+  width : 25%;
+  border :  black solid 2px;
+  text-align : center;
+  border-radius : 15px;
+ }
+
+  #Celeste:hover p{
+    display : block;
+
+}
+
+  #Risk:hover{
+    width : 100%;
+    height : auto;
+    display : block;
+    margin:0;
+    padding : 0;
+}
+
+  #Risk:hover p{
+    display : block;
+    top : -45%;
+    left : 75%;
+    width : 17%;
+  }
+
+  #Yooka:hover p{
+    display : block;
+    top : -50%;
+    left : 80%;
+    width : 15%;
+  }
+
+  #Yooka:hover{
+    height : auto;
+    display : block;
+    margin:0;
+    width : 100%;
+    padding : 0;
+}
+
+
+  .mapReview{
+    display:flex;
+    flex-direction: row;
+  }
+
+  .mapReview img{
+    max-width: 100%;
+  }
+
+  .img-review-container{
+    width: calc(60% - 0.4em);
+    margin: 0.8em;
+  }
+
+  .list-review-container{
+      width: calc(40% - 0.4em);
+      display:flex;
+      align-items: center;
+      margin: 0.8em;
+  }
+  .list-review{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0.4em;
+  }
+ .flex-container{
+   display:flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width:100%;
+   align-items: flex-start;
+ }
+
+ .flex-container-row{
+   width: calc(30% - 1em);
+   flex-direction:column;
+   align-self: flex-start;
+ }
+ .summary{
+   flex-direction:column;
+   font-weight: bold;
+ }
+
+/* Début des sections en MQ : */
+.sectiongénérale{
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.h2change{
+  width : 96%;
+  margin-left : 2%;
+
+}
+
+.top3{
+  width : 45%;
+}
+
+
+.top3 img{
+  width : 100%;
+  height : auto;
+  justify-items: center;
+}
+
+.section2{
+  flex-direction: column;
+  width : 45%;
+  margin-left : 5%;
+}
+
+#lastTest{
+  margin-top: 0.5em;
+  width : 100%;
+  margin-left: 0;
+
+}
+
+
+
+.divDicey{
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#imgDicey {
+  width:71%;
+}
+
+
+/* Page Contact */
+
+/* A propos */
+
+.generalAbout {
+  display: flex;
+  margin: 0 38px;
+  align-items: stretch;
+  background-color: #D9D9D9;
+}
+
+.mini{
+  width: calc(34% - 0.5em);
+}
+
+
+.mapAbout{
+  padding: 15px;
+}
+
+.mapAbout img{
+  max-width: 100%;
+}
+
+.aboutTexte{
+  flex-direction: column;
+}
+
+.aboutTexte p {
+  padding: 15px;
+}
+
+
+
+/* Contact */
+
+.mapContact{
+  margin: 0 38px;
+}
+
+
+.contact{
+  justify-content: center;
+}
+
+.contact input, textarea, button{
+  -moz-box-sizing: content-box; /* or `border-box` */
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-left: 5%;
+
+}
+
+
+.mapImages{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.botMarg{
+  margin-bottom: 0;
+}
+
+/*Footer*/
+
+footer{
+  flex-direction : row;
+  justify-content: space-around;
+}
+
+
+}
+/* Responsive styles pour les commentaires version mobile*/
+
+
+@media (max-width: 960px){
+    /* Make the paragraph in the comments take up the whole width,
+    forcing the avatar and user info to wrap to the next line*/
+    .comment p{
+        width: 100%;
+    }
+
+    /* Reverse the order of elements in the user comments,
+    so that the avatar and info appear after the text. */
+    .comment.user-comment .info{
+        order: 3;
+        text-align: left;
+    }
+
+    .comment.user-comment .avatar{
+        order: 2;
+    }
+
+    .comment.user-comment p{
+        order: 1;
+    }
+
+
+    /* Align toward the beginning of the container (to the left)
+    all the elements inside the author comments. */
+    .comment.author-comment{
+        justify-content: flex-start;
+    }
+
+
+    .comment-section{
+        margin-top: 10px;
+    }
+
+    .comment .info{
+        width: auto;
+    }
+
+    .comment .info a{
+        padding-top: 15px;
+    }
+
+    .comment.user-comment .avatar,
+    .comment.author-comment .avatar{
+        padding: 15px 10px 0 18px;
+        width: auto;
+    }
+
+    .comment.user-comment p:after,
+    .comment.author-comment p:after{
+        width: 12px;
+        height: 12px;
+        top: initial;
+        left: 28px;
+        bottom: -6px;
+    }
+
+    .write-new{
+        width: 100%;
+    }
 }

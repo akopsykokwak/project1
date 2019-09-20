@@ -1,86 +1,247 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>indé:(moddable)</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Abel|Libre+Franklin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap" rel="stylesheet">
+  <title>indé:(moddable)</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="home">
     <!-- menu burger pour la version mobile -->
     <div class="dropdown">
-     <button class="dropbtn">&#x2630;</button>
-       <div class="dropdown-content">
-         <a href="#">Sample reviews</a>
-         <a href="#">Top 3</a>
-         <a href="#">Upcoming reviews</a>
-         <a href="#">Vote for next review</a>
-         <a href="#">About & Contact</a>
+      <button class="dropbtn">&#x2630;</button>
+      <div class="dropdown-content">
+        <a href="#lastReview">Les Tests</a>
+        <a href="#top3">Les Tops</a>
+        <a href="#voteencour">Vote de la commu</a>
+        <a href="contact.html">About & Contact</a>
       </div>
     </div>
 
-<!-- To do : ajouter logo -->
+    <!-- To do : ajouter logo -->
+    <div class="divLogo">
+      <a href="index.html"><img id="Logo" src="https://drive.google.com/uc?id=1aiwO4Ks0VBgEFIqQXcNjWBADC-GNU8kc" alt="logo trop cool"></a>
+    </div>
+
 
     <h1><a class="home-button" href="index.html">indé:(moddable)</a></h1>
 
-<!-- Search bar -->
+    <!-- Search bar -->
 
     <form class="search-bar" action="action_page.php">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
     </form>
-
-<!-- nav pour la version desktop-->
-    <nav>
-    </nav>
   </header>
+
+
+
+
+  <!-- Début main content -->
   <main>
 
+    <!-- nav pour la version desktop-->
+
+    <nav>
+      <div class="containNav">
+        <ul>
+          <li><a href="#top3">Les Tops</a></li>
+          <li><a href="#voteencour">Vote de la commu</a></li>
+          <li><a href="#lastReview">Les Tests</a></li>
+          <li><a href="contact.html">A propos</a></li>
+          <li><a href="contact.html#contacts">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- carousel -->
+    <h2 id="lastTest">Derniers tests</h2>
+    <div id="slider">
+      <figure>
+        <img src="https://drive.google.com/uc?id=1gcAzicVGmYVKWPKVHBzQpFkk_2g58FGT" alt="Celeste">
+        <img src="https://drive.google.com/uc?id=1DSSyxuIhB3GMUv146KkTIJRlcgSel-YP" alt="Risk of rain">
+        <img src="https://drive.google.com/uc?id=1ar_u-Kme9p-PtyA8RT_A-31xWYE5mCYU" alt="Yooka-Laylee">
+        <img src="https://drive.google.com/uc?id=1gcAzicVGmYVKWPKVHBzQpFkk_2g58FGT" alt="Celeste">
+      </figure>
+    </div>
+
+    <!-- section last review desktop-->
+
+    <article class="testDesktop" id="lastReview">
+
+      <div class="divImageDesktop" id="Celeste">
+        <img src="https://drive.google.com/uc?id=1gcAzicVGmYVKWPKVHBzQpFkk_2g58FGT" alt="Celeste">
+        <p>Celeste : un jeu de plateforme exigeant avec une bande son léchée !</p>
+
+      </div>
+      <div class="divImageDesktop" id="Risk">
+        <img src="https://drive.google.com/uc?id=1DSSyxuIhB3GMUv146KkTIJRlcgSel-YP" alt="Risk of rain">
+        <p>Risk of Rain 2: l'esprit de Risk of Rain 1 transposé en 3D</p>
+      </div>
+      <div class="divImageDesktop" id="Yooka">
+        <img src="https://drive.google.com/uc?id=1ar_u-Kme9p-PtyA8RT_A-31xWYE5mCYU" alt="Yooka-Laylee">
+        <p>Yooka-Laylee : le digne successeur de spyro et de banjo kazooie!</p>
+      </div>
+    </article>
+
+    <!-- Section top3 -->
+    <section class="sectiongénérale" id="top3">
+      <section class="top3">
+        <h2 class="h2change">Top 3</h2>
+        <article class="mapArticle">
+
+          <div>
+            <h3><a href="binding-of-isaac.html">The Binding of Isaac</a></h3>
+            <div class="mapImages">
+              <div>
+                <img src="https://drive.google.com/uc?id=1oLisJrRAKbMXLHFNlc-acPU3gjpf6Avw"
+                  alt="Isaac, le héros du jeu est en pleur, entouré de monstres">
+              </div>
+              <p>The Binding of Isaac, originellement petit jeu flash développé par Edmund McMillen et Florian Himsl en 2011,
+                a pris de l'ampleur dans les version Rebirth en 2014 et Afterbirth + 
+                en 2017 tout en gardant son graphisme attachant mais un peu creepy. 
+                Roguelike au gameplay simple avec un potentiel de WTF/10 à chaque nouvelle run,  
+                Isaac reste toujours une référence dans le genre et jouit d'une communauté active, streamers et moddeurs. </p>
+            </div>
+          </div>
+        </article>
+        <article class="mapArticle">
+          <div>
+            <h3><a href="">Undertale</a></h3>
+            <div class="mapImages">
+              <div>
+                <img src="https://drive.google.com/uc?id=1M4UAOkAPnnnMjqphYy49VbjfTYZiCvXF"
+                  alt="Undertale est écrit en pixel sur fond noir, un chien blanc à côté">
+              </div>
+              <p>Undertale est un jeu vidéo développé par Toby Fox seulement. Sorti en 2015 d'abord sur Windows et OS X,
+                il a été édité sur plusieurs consoles les années d'après grâce à son succès.
+                Vous prenez le contrôle d'un enfant tombé dans l'Underground, une région peuplé de monstres,
+                qui doit trouver son chemin pour retourner à la surface.
+                Demander de l'aide aux monstres ou tout détruire sur votre passage ne dépend que de vous.</p>
+            </div>
+          </div>
+        </article>
+        <article class="mapArticle">
+
+          <div>
+            <h3><a href="">Don't starve together</a></h3>
+            <div class="mapImages">
+              <div>
+                <img src="https://drive.google.com/uc?id=1MWmEXM5jzSfHVQvEKvnTkpgzOuIfFCXQ"
+                  alt="Des personnages du jeu semblent se défendre contre leur environnement">
+              </div>
+              <p>Choisissez un personnage, ramassez des ressources, battez vous, mais surtout ... 
+                ne mourrez pas de faim !
+                Don't Starve Together est le petit frère multijoueur de Don't Starve (first of his name). Il sort en Early Access sur steam en 2014
+                et est très vite prit d'assaut et plébiscité pour la qualité du soft. Initialement, cet opus
+                comprennait le même contenu que le solo (avec une difficultée scale pour le multi). Maintenant ce multi possède son contenu propre 
+                et est bien plus dense que DST solo. 
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Section vote de la semaine dernière-->
+      <section class="section2">
+        <h2 class="h2change">Vote de la semaine dernière</h2>
+        <article class="mapArticle"  id="voteencour">
+          <div>
+            <h3>Le gagnant est Dicey Dungeons !</h3>
+            <div class="divDicey">
+              <div id="imgDicey">
+                <img id="Dicey" src="https://drive.google.com/uc?id=13S5pCL0LAhz-T_QxMmpxkgKjj-bECYxR" alt="" />
+              </div>
+              <p><b>Titre :</b> Dicey Dungeons</p>
+              <p><b>Genre :</b> Stratégie</p>
+              <p><b>Développeur :</b> Terry Cavanagh</p>
+              <p><b>Editeur :</b> Terry Cavanagh</p>
+              <p><b>Date de sortie :</b> 13/08/2019</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Vote de la semaine :-->
+
+        <h2 class="h2change">Vote à venir</h2>
+
+        <article class="mapArticle">
+          <div class="divDifferente">
+            <h3>Que souhaitez vous nous voir tester ?</h3>
+
+            <form action="http://www.strawpoll.me/18657752" method="get" id="form1">
+              <div class="lesJeux Blasphemous">
+                <input type="radio" id="Blasphemous" name="jeu" value="Blasphemous">
+                <label for="Blasphemous">Blasphemous</label>
+              </div>
+              <div class="lesJeux">
+                <input type="radio" id="Kerbal-Space-Program" name="jeu" value="Kerbal Space Program">
+                <label for="Kerbal-Space-Program">Kerbal Space Program</label>
+              </div>
+
+              <div class="botMarg lesJeux">
+                <input type="radio" id="Gris" name="jeu" value="Gris">
+                <label for="Gris">Gris</label>
+              </div>
+              <button class="voteBouton botMarg" type="submit" form="form1" value="submit">Vote !</button>
+            </form>
+          </div>
+          
+        </article>
+      </section>
+    </section>
   </main>
 
 
 
-    <footer>
-        <div class="liensblog">
-            <ul>
-                <li>Dernières reviews</li>
-                <li>FAQ</li>
-                <li>A propos</li>
-            </ul>
-        </div>
-        <div class="reseau">
-            <ul class="icones">
-                <li>
-                    <a href="" title="facebook">
-                        <img class="icon" src="https://drive.google.com/uc?id=1DRkIjVY92te_Icf2hHx4itFWFCN1mjXI" alt=""/>
-                    </a>
-                </li>
-                <li>
-                    <a href="" title="twitter">
-                        <img class="icon" src="https://drive.google.com/uc?id=1yUJ3cp9n0XqWNgheu3JPKkqVlQga780m" alt=""/>
-                    </a>
-                </li>
-                <li>
-                    <a href="" title="youtube">
-                        <img class="icon" src="https://drive.google.com/uc?id=1YrYoP_6-qecSZD1IMzVVbmY1VgSeasbK" alt=""/>
-                    </a>
-                </li>
-                <li>
-                    <a href="" title="twitch">
-                        <img class="icon" src="https://drive.google.com/uc?id=1JmMTQK6APITgWls6bqWtx1aFa4MfEduL" alt=""/>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="copyright">
-            	© indé:(moddable), 2019.
-        </div>
-      </footer>
+  <div class="filler"></div>
+  <footer>
+    <div class="liensblog">
+      <ul>
+        <li>Dernières reviews</li>
+        <li>FAQ</li>
+        <li>A propos</li>
+      </ul>
+
+    </div>
+    <div class="reseau">
+      <ul class="icones">
+        <li>
+          <a href="" title="facebook">
+            <img class="icon" src="https://drive.google.com/uc?id=1DRkIjVY92te_Icf2hHx4itFWFCN1mjXI" alt="Facebook" />
+          </a>
+        </li>
+        <li>
+          <a href="" title="twitter">
+            <img class="icon" src="https://drive.google.com/uc?id=1yUJ3cp9n0XqWNgheu3JPKkqVlQga780m" alt="Twitter" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/user/kumonijiako" title="youtube" target="_blank">
+            <img class="icon" src="https://drive.google.com/uc?id=1YrYoP_6-qecSZD1IMzVVbmY1VgSeasbK" alt="Youtube" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitch.tv/mrrrrrggllup" title="twitch" target="_blank">
+            <img class="icon" src="https://drive.google.com/uc?id=1JmMTQK6APITgWls6bqWtx1aFa4MfEduL" alt="Twitch" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      © indé:(moddable), 2019.
+    </div>
+  </footer>
+
 
 </body>
+
 </html>
