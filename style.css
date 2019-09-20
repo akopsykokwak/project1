@@ -894,10 +894,7 @@ h1{
       margin: 0.8em;
   }
   .list-review{
-    display:flex;
-    flex-wrap:wrap;
-    align-items: center;
-    justify-content: flex-start;
+
     margin: 0.4em;
   }
  .flex-container{
